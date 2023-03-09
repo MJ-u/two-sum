@@ -2,10 +2,10 @@ def twoSum(self, nums: List[int], target: int) -> List[int]:
     temp = 0 #찾을 숫자
     index = 0
     found = False
-    sizeofnums = len(self.nums)
+    sizeofnums = len(nums)
     while ((not found) and (index < sizeofnums)) :
         num1 = index
-        temp = self.target - self.nums[index]
+        temp = target - nums[index]
         for j in range (index+1, sizeofnums) :
             if (self.nums[j] == temp) :
                 found = True
