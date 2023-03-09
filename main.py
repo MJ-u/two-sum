@@ -7,7 +7,7 @@ def twoSum(self, nums: List[int], target: int) -> List[int]:
         num1 = index
         temp = target - nums[index]
         for j in range (index+1, sizeofnums) :
-            if (self.nums[j] == temp) :
+            if (nums[j] == temp) :
                 found = True
                 num2 = j
         index += 1
